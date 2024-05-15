@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	version="4.0">
+
+	<!-- Dashboard connection -->
+	<servlet>
+		<servlet-name>dashboardServlet</servlet-name>
+		<servlet-class>net.javaguides.web.dashboardServlet</servlet-class>
+	</servlet>
+
+	<!-- Servlet mappings for dashboard -->
+	<servlet-mapping>
+		<servlet-name>dashboardServlet</servlet-name>
+		<url-pattern>/dashboard-view</url-pattern> <!-- This maps the servlet to the URL pattern /hello -->
+	</servlet-mapping>
+
+	<!-- Purchase product connection -->
+	<servlet>
+		<servlet-name>PurchaseServlet</servlet-name>
+		<servlet-class>net.javaguides.web.PurchaseServlet</servlet-class>
+	</servlet>
+
+	<!-- Servlet mappings for purchase -->
+	<servlet-mapping>
+		<servlet-name>PurchaseServlet</servlet-name>
+		<url-pattern>/insertPurchase</url-pattern> <!-- This maps the servlet to the URL pattern /hello -->
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>PurchaseServlet</servlet-name>
+		<url-pattern>/updatePurchase</url-pattern> <!-- This maps the servlet to the URL pattern /hello -->
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>PurchaseServlet</servlet-name>
+		<url-pattern>/newPurchase</url-pattern> <!-- This maps the servlet to the URL pattern /hello -->
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>PurchaseServlet</servlet-name>
+		<url-pattern>/purchase-list</url-pattern> <!-- This maps the servlet to the URL pattern /hello -->
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>PurchaseServlet</servlet-name>
+		<url-pattern>/editPurchase</url-pattern> <!-- This maps the servlet to the URL pattern /hello -->
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>PurchaseServlet</servlet-name>
+		<url-pattern>/deletePurchase</url-pattern> <!-- This maps the servlet to the URL pattern /hello -->
+	</servlet-mapping>
+
+	<!-- Customer connection -->
+	<servlet>
+		<servlet-name>CustomerServlet</servlet-name>
+		<servlet-class>net.javaguides.web.CustomerServlet</servlet-class>
+	</servlet>
+
+	<!-- Servlet mappings for customer -->
+	<servlet-mapping>
+		<servlet-name>CustomerServlet</servlet-name>
+		<url-pattern>/new</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>CustomerServlet</servlet-name>
+		<url-pattern>/insert</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>CustomerServlet</servlet-name>
+		<url-pattern>/delete</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>CustomerServlet</servlet-name>
+		<url-pattern>/edit</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>CustomerServlet</servlet-name>
+		<url-pattern>/update</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>CustomerServlet</servlet-name>
+		<url-pattern>/customer-list</url-pattern>
+	</servlet-mapping>
+
+	<!-- Category connection -->
+	<servlet>
+		<servlet-name>CategoryServlet</servlet-name>
+		<servlet-class>net.javaguides.web.CategoryServlet</servlet-class>
+	</servlet>
+
+	<!-- Servlet mappings for category -->
+	<servlet-mapping>
+		<servlet-name>CategoryServlet</servlet-name>
+		<url-pattern>/newCategory</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>CategoryServlet</servlet-name>
+		<url-pattern>/insertCategory</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>CategoryServlet</servlet-name>
+		<url-pattern>/deleteCategory</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>CategoryServlet</servlet-name>
+		<url-pattern>/editCategory</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>CategoryServlet</servlet-name>
+		<url-pattern>/updateCategory</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>CategoryServlet</servlet-name>
+		<url-pattern>/category-list</url-pattern>
+	</servlet-mapping>
+
+	<!-- Supplier connection -->
+	<servlet>
+		<servlet-name>SupplierServlet</servlet-name>
+		<servlet-class>net.javaguides.web.SupplierServlet</servlet-class>
+	</servlet>
+
+	<!-- Servlet mappings for supplier -->
+	<servlet-mapping>
+		<servlet-name>SupplierServlet</servlet-name>
+		<url-pattern>/newSupplier</url-pattern> <!-- This maps the servlet to the URL pattern /hello -->
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>SupplierServlet</servlet-name>
+		<url-pattern>/insertSupplier</url-pattern> <!-- This maps the servlet to the URL pattern /hello -->
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>SupplierServlet</servlet-name>
+		<url-pattern>/deleteSupplier</url-pattern> <!-- This maps the servlet to the URL pattern /hello -->
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>SupplierServlet</servlet-name>
+		<url-pattern>/editSupplier</url-pattern> <!-- This maps the servlet to the URL pattern /hello -->
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>SupplierServlet</servlet-name>
+		<url-pattern>/updateSupplier</url-pattern> <!-- This maps the servlet to the URL pattern /hello -->
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>SupplierServlet</servlet-name>
+		<url-pattern>/supplier-list</url-pattern> <!-- This maps the servlet to the URL pattern /hello -->
+	</servlet-mapping>
+
+	<!-- product connection -->
+	<servlet>
+		<servlet-name>ProductServlet</servlet-name>
+		<servlet-class>net.javaguides.web.ProductServlet</servlet-class>
+	</servlet>
+
+	<!-- Servlet mappings for product -->
+	<servlet-mapping>
+		<servlet-name>ProductServlet</servlet-name>
+		<url-pattern>/newProduct</url-pattern> <!-- This maps the servlet to the URL pattern /hello -->
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>ProductServlet</servlet-name>
+		<url-pattern>/insertProduct</url-pattern> <!-- This maps the servlet to the URL pattern /hello -->
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>ProductServlet</servlet-name>
+		<url-pattern>/deleteProduct</url-pattern> <!-- This maps the servlet to the URL pattern /hello -->
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>ProductServlet</servlet-name>
+		<url-pattern>/editProduct</url-pattern> <!-- This maps the servlet to the URL pattern /hello -->
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>ProductServlet</servlet-name>
+		<url-pattern>/updateProduct</url-pattern> <!-- This maps the servlet to the URL pattern /hello -->
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>ProductServlet</servlet-name>
+		<url-pattern>/Product-list</url-pattern> <!-- This maps the servlet to the URL pattern /hello -->
+	</servlet-mapping>
+
+	<!-- User connection -->
+	<servlet>
+		<servlet-name>UserServlet</servlet-name>
+		<servlet-class>net.javaguides.web.UserServlet</servlet-class>
+	</servlet>
+
+	<!-- Servlet mappings for User -->
+	<servlet-mapping>
+		<servlet-name>UserServlet</servlet-name>
+		<url-pattern>/newUser</url-pattern> <!-- This maps the servlet to the URL pattern /hello -->
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>UserServlet</servlet-name>
+		<url-pattern>/insertUser</url-pattern> <!-- This maps the servlet to the URL pattern /hello -->
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>UserServlet</servlet-name>
+		<url-pattern>/deleteUser</url-pattern> <!-- This maps the servlet to the URL pattern /hello -->
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>UserServlet</servlet-name>
+		<url-pattern>/editUser</url-pattern> <!-- This maps the servlet to the URL pattern /hello -->
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>UserServlet</servlet-name>
+		<url-pattern>/updateUser</url-pattern> <!-- This maps the servlet to the URL pattern /hello -->
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>UserServlet</servlet-name>
+		<url-pattern>/updateUser-list</url-pattern> <!-- This maps the servlet to the URL pattern /hello -->
+	</servlet-mapping>
+
+
+</web-app>
